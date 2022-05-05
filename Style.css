@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+hr {
+    position: relative;
+    width: 350px;
+    height: 4px;
+    background-color: black;
+    top: 250px;
+}
+
+p {
+    position: relative;
+    border-style: solid;
+    background-color: blue;
+    border-width: 0;
+    width: 200px;
+    height: 200px;
+    left: 285px;
+    top: 47px;
+    animation-name: Ball;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-direction: alternate;
+}
+
+@keyframes Ball {
+    0% {background-color: blue;}
+    10% {transform: rotate(60deg);}
+    20% {left: 390px;}
+    30% {top: 750px; background-color: red; border-radius: 100%;}
+    60% {left: 900px; top: 300px;}
+    80% {left: 1300px; top: 750px;}
+    100% {left: 1725px; top: 450px; background-color: red; border-radius: 100%;}
+}
